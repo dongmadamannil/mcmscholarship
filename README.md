@@ -1,1 +1,1 @@
-# mcmscholarship
+# scholarshipproject

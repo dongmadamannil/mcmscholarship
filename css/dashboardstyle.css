@@ -1,0 +1,53 @@
+.container{
+    text-align: center;
+    margin-top: 175px;
+}
+body{
+    /* background-image: url(/images/tkm1.jpg); */
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+/* **********************navbar***************** */
+.title{
+    width: 100%;
+    height: 50px;
+    background: rgb(7, 91, 136);
+    color: whitesmoke;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+}   
+.container-fluid{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+.column {
+    float: left;
+    height: 1000px;
+    padding: 10px;
+   border: solid;
+  }
+.first{
+    width: 20%;
+    padding-left: 40px;
+    background: rgb(7, 91, 136);
+    border: none;
+}
+.second{
+    width: 80%;
+}
+a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(137, 194, 225);
+    
+    font-style: none;
+}
+h4{
+    color:white;
+    padding:30px 0px 10px 0px;
+}
