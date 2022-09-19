@@ -107,7 +107,7 @@ if(isset($_POST['lgn']))
             echo "<script>alert('Login success   ".$row['u_type']."   ". $_SESSION['login']."');</script>";
 if($row['u_type']=="advisor"){
   
-echo "<script>window.location='dashboardindex.html';</script>";
+echo "<script>window.location='advisor_dashboard.html';</script>";
 }
 
 
