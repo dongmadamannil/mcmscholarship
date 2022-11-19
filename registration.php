@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/registration_style.css">
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -131,38 +131,23 @@
                             </select>
                         </div>
                         <div class="input-field">
-                            <label>Semester</label>
-                            <select required name="sem">
-                                <option disabled selected>Select semester</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
+                            <label>Branch</label>
+                            <select required id="branch" name="branch">
+                                <option value="" selected="selected">Select branch</option>
                             </select>
                         </div>
                         <div class="input-field">
-                            <label>Branch</label>
-                            <select required name="branch">
-                                <option disabled selected>Select branch</option>
-                                <option>CS</option>
-                                <option>ME</option>
-                                <option>CE</option>
-                                <option>E</option>
-                                <option>EEE</option>
-                                <option>MCA</option>
+                            <label>Semester</label>
+                            <select required id="sem" name="sem">
+                                <option value="" selected="selected">Select semester</option>
+                              
                             </select>
                         </div>
+                        
                         <div class="input-field">
                             <label>Batch</label>
-                            <select required name="batch">
-                                <option disabled selected>Select batch</option>
-                                <option>A</option>
-                                <option>B</option>
-                                <option>C</option>
+                            <select required id="batch" name="batch">
+                                <option value="" selected="selected">Select batch</option>
                             </select>
                         </div>
                         <div class="input-field">
@@ -171,11 +156,11 @@
                         </div>
                         <div class="input-field">
                             <label>Hostel Address</label>
-                            <input type="text" name="hosteladd" id="hosteladd" onblur="valdfn6()" onkeyup="valdfn6()" placeholder="Enter your hostel address" required>
+                            <input type="text" name="hosteladd" id="hosteladd"  onblur="valdfn6()" onkeyup="valdfn6()" placeholder="Enter your hostel address" required>
                         </div>
                         <div class="input-field">
                             <label>Permanent Address</label>
-                            <input type="text" name="address" id="address" onblur="valdfn7()" onkeyup="valdfn7()" placeholder="Enter your address" required>
+                            <input type="text" name="address" id="address" onblur="valdfn7()"  onkeyup="valdfn7()" placeholder="Enter your address" required>
                         </div>
                     </div>
                 </div>
@@ -241,17 +226,17 @@
 
                         <div class="input-field">
                             <label>Semester Fees/Year</label>
-                            <input type="number" name="semfee" id="semfee" onblur="valdfn9()" onkeyup="valdfn9()"  placeholder="Enter your sem fees" required  >
+                            <input type="number" name="semfee" id="semfee"  onblur="valdfn9()" onkeyup="valdfn9()"  placeholder="Enter your sem fees" required  >
                         </div>
 
                         <div class="input-field">
                             <label>Exam Fees/Year</label>
-                            <input type="number" name="examfee" id="examfee" onblur="valdfn10()" onkeyup="valdfn10()" placeholder="Enter your exam fees" required  >
+                            <input type="number" name="examfee" id="examfee"  onblur="valdfn10()" onkeyup="valdfn10()" placeholder="Enter your exam fees" required  >
                         </div>
 
                         <div class="input-field">
                             <label>stationary Fees/Year</label>
-                            <input type="number" name="stationaryfee" id="stationaryfee" onblur="valdfn11()" onkeyup="valdfn11()" placeholder="Enter stationary fee" required  >
+                            <input type="number" name="stationaryfee" id="stationaryfee"  onblur="valdfn11()" onkeyup="valdfn11()" placeholder="Enter stationary fee" required  >
                         </div>
                           <div class="input-field">
                             <label>Hostel Fees/Year</label>
@@ -259,11 +244,11 @@
                         </div>
                         <div class="input-field">
                             <label>Other fee details</label>
-                            <input type="text" name="otherdetails" id="otherfeede" onblur="valdfn13()" onkeyup="valdfn13()"  placeholder="Enter fee detail" required >
+                            <input type="text" name="otherdetails" id="otherfeede"  onblur="valdfn13()" onkeyup="valdfn13()"  placeholder="Enter fee detail" required >
                         </div>
                         <div class="input-field">
                             <label>Other Fees/Year</label>
-                            <input type="number"  name="otherfee" id="otherfee" onblur="valdfn14()" onkeyup="valdfn14()"  placeholder="Enter other fee" required  >
+                            <input type="number"  name="otherfee" id="otherfee"  onblur="valdfn14()" onkeyup="valdfn14()"  placeholder="Enter other fee" required  >
                         </div>
                     </div>
                 </div>
@@ -274,12 +259,12 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Father Name</label>
-                            <input type="text" name="fname" id="fname" onblur="valdfn15()" onkeyup="valdfn15()" placeholder="Enter father name" required >
+                            <input type="text" name="fname" id="fname"  onblur="valdfn15()" onkeyup="valdfn15()" placeholder="Enter father name" required >
                         </div>
 
                         <div class="input-field">
                             <label>Father age</label>
-                            <input type="number" name="fage" id="fage" onblur="valdfn16()" onkeyup="valdfn16()" placeholder="Enter father age" required  >
+                            <input type="number" name="fage" id="fage"  onblur="valdfn16()" onkeyup="valdfn16()" placeholder="Enter father age" required  >
                         </div>
 
                         <div class="input-field">
@@ -289,45 +274,45 @@
 
                         <div class="input-field">
                             <label>Mother Name</label>
-                            <input type="text" name="mname" id="mname" onblur="valdfn18()" onkeyup="valdfn18()" placeholder="Enter mother name" required >
+                            <input type="text" name="mname" id="mname"  onblur="valdfn18()" onkeyup="valdfn18()" placeholder="Enter mother name" required >
                         </div>
 
                         <div class="input-field">
                             <label>Mother age</label>
-                            <input type="number" name="mage" id="mage" onblur="valdfn19()" onkeyup="valdfn19()"placeholder="Enter mother age" required >
+                            <input type="number" name="mage" id="mage"  onblur="valdfn19()" onkeyup="valdfn19()"placeholder="Enter mother age" required >
                         </div>
 
                         <div class="input-field">
                             <label>Mother salary</label>
-                            <input type="number" name="msal" id="msal" onblur="valdfn20()" onkeyup="valdfn20()" placeholder="Enter mother salary" required >
+                            <input type="number" name="msal" id="msal"  onblur="valdfn20()" onkeyup="valdfn20()" placeholder="Enter mother salary" required >
                         </div>
                         <div class="input-field">
                             <label>1st sibling Name</label>
-                            <input type="text" name="s1name" id="s1name" onblur="valdfn21()" onkeyup="valdfn21()" placeholder="Enter sibling1 name" required >
+                            <input type="text" name="s1name" id="s1name"  onblur="valdfn21()" onkeyup="valdfn21()" placeholder="Enter sibling1 name" required >
                         </div>
 
                         <div class="input-field">
                             <label>1st sibling age</label>
-                            <input type="number" name="s1age" id="s1age" onblur="valdfn22()" onkeyup="valdfn22()"placeholder="Enter sibling1 age" required >
+                            <input type="number" name="s1age" id="s1age"  onblur="valdfn22()" onkeyup="valdfn22()"placeholder="Enter sibling1 age" required >
                         </div>
 
                         <div class="input-field">
                             <label>1st sibling salary</label>
-                            <input type="number" name="s1sal" id="s1sal" onblur="valdfn23()" onkeyup="valdfn23()" placeholder="Enter sibling1 salary" required >
+                            <input type="number" name="s1sal" id="s1sal"  onblur="valdfn23()" onkeyup="valdfn23()" placeholder="Enter sibling1 salary" required >
                         </div>
                         <div class="input-field">
                             <label>2nd sibling2 Name</label>
-                            <input type="text" name="s2name" id="s2name" onblur="valdfn24()" onkeyup="valdfn24()" placeholder="Enter sibling2 name" required >
+                            <input type="text" name="s2name" id="s2name"  onblur="valdfn24()" onkeyup="valdfn24()" placeholder="Enter sibling2 name" required >
                         </div>
 
                         <div class="input-field">
                             <label>2nd sibling2 age</label>
-                            <input type="number" name="s2age" id="s2age" onblur="valdfn25()" onkeyup="valdfn25()" placeholder="Enter sibling2 age" required >
+                            <input type="number" name="s2age" id="s2age"  onblur="valdfn25()" onkeyup="valdfn25()" placeholder="Enter sibling2 age" required >
                         </div>
 
                         <div class="input-field">
                             <label>2nd sibling salary</label>
-                            <input type="number" name="s2sal" id="s2sal" onblur="valdfn26()" onkeyup="valdfn26()" placeholder="Enter sibling2 salary" required >
+                            <input type="number" name="s2sal" id="s2sal"  onblur="valdfn26()" onkeyup="valdfn26()" placeholder="Enter sibling2 salary" required >
                         </div>
                         <div class="input-field">
                             <label>Income Certificate</label>
@@ -393,9 +378,133 @@ nextBtn.addEventListener("click", ()=> form.classList.add('secActive'));
     // })
 // })
 
-backBtn.addEventListener("click", () => form.classList.remove('secActive'));
-*/
-
+backBtn.addEventListener("click", () => form.classList.remove('secActive'));*/
+//////////////////////////////drop down generate/////////////////////////////////////////////////////////////////////////////////
+var branchObject = {
+  "CS": {
+    "1": ["A","B","C"],
+    "2": ["A","B","C"],
+    "3": ["A","B","C"],
+    "4": ["A","B","C"], 
+    "5": ["A","B","C"], 
+    "6": ["A","B","C"],   
+    "7": ["A","B","C"], 
+    "8": ["A","B","C"] 
+  },
+  "MS": {
+    "1": ["A","B","C"],
+    "2": ["A","B","C"],
+    "3": ["A","B","C"],
+    "4": ["A","B","C"], 
+    "5": ["A","B","C"], 
+    "6": ["A","B","C"],   
+    "7": ["A","B","C"], 
+    "8": ["A","B","C"] 
+  },
+   "CS": {
+    "1": ["A","B","C"],
+    "2": ["A","B","C"],
+    "3": ["A","B","C"],
+    "4": ["A","B","C"], 
+    "5": ["A","B","C"], 
+    "6": ["A","B","C"],   
+    "7": ["A","B","C"], 
+    "8": ["A","B","C"]
+  },
+  "EEE": {
+    "1": ["A","B","C"],
+    "2": ["A","B","C"],
+    "3": ["A","B","C"],
+    "4": ["A","B","C"], 
+    "5": ["A","B","C"], 
+    "6": ["A","B","C"],   
+    "7": ["A","B","C"], 
+    "8": ["A","B","C"] 
+  },
+  "C": {
+    "1": ["A","B","C"],
+    "2": ["A","B","C"],
+    "3": ["A","B","C"],
+    "4": ["A","B","C"], 
+    "5": ["A","B","C"], 
+    "6": ["A","B","C"],   
+    "7": ["A","B","C"], 
+    "8": ["A","B","C"] 
+  },
+  "MCA": {
+    "1": ["A"],
+    "2": ["A"],
+    "3": ["A"],
+    "4": ["A"]
+ 
+  },
+  "CHEM": {
+    "1": ["A","B","C"],
+    "2": ["A","B","C"],
+    "3": ["A","B","C"],
+    "4": ["A","B","C"], 
+    "5": ["A","B","C"], 
+    "6": ["A","B","C"],   
+    "7": ["A","B","C"], 
+    "8": ["A","B","C"]
+  },
+  "MTECH": {
+    "1": ["A"],
+    "2": ["A"],
+    "3": ["A"],
+    "4": ["A"] 
+  },
+  "MPLAN": {
+    "1": ["A"],
+    "2": ["A"],
+    "3": ["A"],
+    "4": ["A"] 
+  },
+  "ARCH": {
+    "1": ["A","B","C"],
+    "2": ["A","B","C"],
+    "3": ["A","B","C"],
+    "4": ["A","B","C"], 
+    "5": ["A","B","C"], 
+    "6": ["A","B","C"],   
+    "7": ["A","B","C"], 
+    "8": ["A","B","C"],
+    "9": ["A","B","C"],
+    "10": ["A","B","C"]
+  },
+  "MARCH": {
+    "1": ["A","B","C"],
+    "2": ["A","B","C"],
+    "3": ["A","B","C"],
+    "4": ["A","B","C"]
+  }
+}
+window.onload = function() {
+  var branchSel = document.getElementById("branch");
+  var semSel = document.getElementById("sem");
+  var batchSel = document.getElementById("batch");
+  for (var x in branchObject) {
+    branchSel.options[branchSel.options.length] = new Option(x, x);
+  }
+  branchSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    semSel.length = 1;
+    batchSel.length = 1;
+    //display correct values
+    for (var y in branchObject[this.value]) {
+      semSel.options[semSel.options.length] = new Option(y, y);
+    }
+  }
+  semSel.onchange = function() {
+    //empty Chapters dropdown
+    batchSel.length = 1;
+    //display correct values
+    var z = branchObject[branchSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      batchSel.options[batchSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
 
 /////////////////////////////validation///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -902,15 +1011,34 @@ function valdfn26()
 function test()
 {
     if(s1==1&&s2==1&&s3==1&&s4==1&&s5==1&&s6==1&&s7==1&&s8==1&&s9==1&&s10==1&&s11==1&&s12==1&&s13==1&&s14==1&&s15==1&&s16==1&&s17==1&&s18==1&&s19==1&&s20==1&&s21==1&&s22==1&&s23==1&&s24==1&&s25==1&&s26==1)
-    {   document.getElementById("subb").style.backgroundColor ="#4CAF50";
+    {   document.getElementById("register").style.backgroundColor ="#265df2";
         document.getElementById("register").disabled =false;
                 
     }
     else
-    {    document.getElementById("subb").style.backgroundColor ="#C9CAC9";
+    {    document.getElementById("register").style.backgroundColor ="#C9CAC9";
         document.getElementById("register").disabled =true;
     }
 }
+var sub=getElementById("register");
+sub.addEventListener('click',function(e)
+{
+    e.preventDefault();
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "farhana.arehim@gmail.com",
+    Password : "ptpmyooucmtjeowy",
+    To : "farhana.arehim@gmail.com",
+    From : "farhana.arehim@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the  body"
+}).then(
+  message => alert(message)
+);
+
+})
+</script>
+<script src="https://smtpjs.com/v3/smtp.js">
 </script>
 </body>
 </html>

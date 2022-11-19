@@ -283,8 +283,7 @@ document.getElementById("err").style.display="block";
 	if(h==1)
 	{
 alert('password changed successfully');
-k="<?php $_SESSION['login']=''?>";
-window.location="C:/xampp/htdocs/scholarshipproject/login.php";
+window.open("login.php",'_top');
    }
 else
 {

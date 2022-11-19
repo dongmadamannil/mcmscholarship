@@ -67,12 +67,12 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
                     <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
 
                     <div class="form-outline form-white mb-4">
-                    <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="Email" name="uname" required/>
+                    <input type="text"  class="form-control form-control-lg" placeholder="Enter Username" name="uname" required/>
 
                     </div>
 
                     <div class="form-outline form-white mb-4">
-                    <input type="password" id="typePasswordX" class="form-control form-control-lg"placeholder="Password" name="psw" required />
+                    <input type="password"  class="form-control form-control-lg"placeholder="Enter Password" name="psw" required />
                     </div>
 
                     <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
@@ -93,7 +93,7 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
 
 
 <?php
-$conn=mysqli_connect("localhost","root","","scholarship");
+include("dbconnect.php");
 if(isset($_POST['lgn']))
 {
     $user=$_POST['uname'];
@@ -108,9 +108,21 @@ if(isset($_POST['lgn']))
             
             $_SESSION['login']=$row['uname'];
             echo "<script>alert('Login success   ".$row['u_type']."   ". $_SESSION['login']."');</script>";
-if($row['u_type']=="advisor"){
+if($row['u_type']=="Advisor"){
   
 echo "<script>window.location='advisor_dashboard.html';</script>";
+}
+else if($row['u_type']=="HOD"){
+  
+echo "<script>window.location='hod_dashboard.html';</script>";
+}
+else if($row['u_type']=="SCH"){
+  
+echo "<script>window.location='coordinator_dashboard.html';</script>";
+}
+else if($row['u_type']=="admin"){
+  
+echo "<script>window.location='admin_dashboard.html';</script>";
 }
 
 

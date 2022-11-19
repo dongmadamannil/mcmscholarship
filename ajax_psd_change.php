@@ -1,5 +1,6 @@
 <?php
-$conn=mysqli_connect("localhost","root","","scholarship");
+session_start();
+include("dbconnect.php");
 if($_POST['no']==1)
 {
 $ui=$_POST['uidr'];	
@@ -25,7 +26,9 @@ if($_POST['no']==2)
 $sq1="update login set pass='$passwor' where uname='$userid';";
 if(mysqli_query($conn,$sq1))	
 {
+	$_SESSION['login']="";
     echo 1;
+
 }
 else
 {echo 0;
